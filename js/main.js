@@ -18,6 +18,29 @@ let discountOld = 40/100;
 
 let oldKmPrice = standardKmPrice * (1 - discountOld);
 
+//define kms from user prompt
+
+let userKm = Number(prompt('How long is your trait (Km)?'));
+
+//define age from user prompt
+
+let userAge = Number(prompt('What is your age?'));
+
+//calc and show right ticked price
+
+let userTicketPrice = userKm * standardKmPrice;
+
+if ( userAge < 18) {
+    userTicketPrice = userKm * minorsKmPrice;
+} else if ( userAge >= 65 ) {
+    userTicketPrice = userKm * oldKmPrice;
+}
+
+//show final ticket price
+
+document.querySelector('h1').innerHTML = `${userTicketPrice} €`
+
+
 
 
 

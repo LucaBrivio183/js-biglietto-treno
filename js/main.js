@@ -20,7 +20,7 @@ let oldKmPrice = standardKmPrice * (1 - discountOld);
 
 //define kms from user prompt
 
-let userKm = Number(prompt('How long is your trait (Km)?'));
+let userKm = parseInt(prompt('How long is your trait (Km)?'));
 
 if (isNaN(userKm)) {
     alert('It is not a number');
@@ -28,7 +28,7 @@ if (isNaN(userKm)) {
 
 //define age from user prompt
 
-let userAge = Number(prompt('What is your age?'));
+let userAge = parseInt(prompt('What is your age?'));
 
 if (isNaN(userAge)) {
     alert('It is not a number'); 

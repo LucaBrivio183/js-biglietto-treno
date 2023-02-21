@@ -22,9 +22,17 @@ let oldKmPrice = standardKmPrice * (1 - discountOld);
 
 let userKm = Number(prompt('How long is your trait (Km)?'));
 
+if (isNaN(userKm)) {
+    alert('It is not a number'); 
+} 
+
 //define age from user prompt
 
 let userAge = Number(prompt('What is your age?'));
+
+if (isNaN(userAge)) {
+    alert('It is not a number'); 
+} 
 
 //calc and show right ticked price
 
@@ -38,7 +46,7 @@ if ( userAge < 18) {
 
 //show final ticket price
 
-document.querySelector('h1').innerHTML = `${userTicketPrice} €`
+document.querySelector('h1').innerHTML = `${userTicketPrice.toFixed(2)} €`
 
 
 

@@ -1,0 +1,25 @@
+/* common */
+
+body {
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container  {
+    text-align: center;
+}
+
+p {
+    font-size: 2vw;
+}
+
+h1 {
+    font-size: 5vw;
+    background-color: white;
+    padding: 1vw 2vw;
+    -webkit-box-shadow: inset 0px -11px 12px -3px #000000; 
+    box-shadow: inset 0px -11px 12px -3px #000000;
+}

@@ -23,7 +23,7 @@ let oldKmPrice = standardKmPrice * (1 - discountOld);
 let userKm = Number(prompt('How long is your trait (Km)?'));
 
 if (isNaN(userKm)) {
-    alert('It is not a number'); 
+    alert('It is not a number');
 } 
 
 //define age from user prompt
